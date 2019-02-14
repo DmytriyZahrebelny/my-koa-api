@@ -14,15 +14,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@koa/cors": "^2.2.3",
     "config": "^3.0.1",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
-    "koa-cors": "0.0.16",
     "koa-favicon": "^2.0.1",
     "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0",
     "koa-session": "^5.10.1",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.4.11",
+    "mongoose-beautiful-unique-validation": "^7.1.1"
   },
   "devDependencies": {
     "eslint": "^5.13.0",
