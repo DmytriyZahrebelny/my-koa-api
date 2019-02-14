@@ -18,6 +18,7 @@ const productsSchema = new mongoose.Schema({
     required: 'price is required',
   },
 }, {
+  versionKey: false,
   timestamps: true,
 });
 

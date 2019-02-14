@@ -4,6 +4,6 @@ const config = require('config');
 
 mongoose.set('debug', config.get('mongodb.debug'));
 mongoose.plugin(beautifyUnique);
-mongoose.connect(config.get('mongodb.url'));
+mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true });
 
 module.exports = mongoose;

@@ -7,6 +7,5 @@ module.exports = {
   templatesRoot: path.join(process.cwd(), 'templates'),
   mongodb: {
     debug: true,
-    url: 'mongodb://localhost/test',
   },
 };
