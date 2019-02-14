@@ -4,6 +4,7 @@
   "description": "my-shop-api",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +25,8 @@
     "koa-session": "^5.10.1",
     "koa-static": "^5.0.0",
     "mongoose": "^5.4.11",
-    "mongoose-beautiful-unique-validation": "^7.1.1"
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^5.13.0",

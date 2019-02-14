@@ -1,17 +1,24 @@
 const mongoose = require('../libs/mongoose');
 
 const productsSchema = new mongoose.Schema({
-  name: {
+  id: {
     type: String,
-    required: 'Name is required',
+  },
+  title: {
+    type: String,
+    required: 'Title is required',
   },
   type: {
     type: String,
     required: 'Type is required',
   },
-  descriptions: {
+  description: {
     type: String,
-    required: 'descriptions is required',
+    required: 'description is required',
+  },
+  image: {
+    type: String,
+    required: 'Image is required',
   },
   price: {
     type: String,
