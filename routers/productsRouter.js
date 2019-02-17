@@ -18,10 +18,26 @@ productsRouter
 
     ctx.body = await Products.find({});
   })
-  .patch('/change/:id', async (ctx) => {
-    console.log(ctx.params.id);
+  .patch('/change/', async (ctx) => {
+    const {
+      title,
+      type,
+      description,
+      image,
+      price,
+    } = ctx.request.body;
 
-    ctx.body = 'ok';
+    await Products.findOneAndUpdate({ id: ctx.request.body.id }, {
+      $set: {
+        title,
+        type,
+        description,
+        image,
+        price,
+      },
+    }, { new: true });
+
+    ctx.body = await Products.find({});
   });
 
 module.exports = productsRouter;
